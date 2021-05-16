@@ -7,7 +7,9 @@
 <p>Este é o meu espaço de estudo (e prática)! Estarei trabalhando com ferramentas como docker, typescript, node, angular, entre outras :)</p>
 <p>Foi um jeito que achei de organizar os meus estudos, mas fique à vontade, sinta-se em casa.</p>
 
+<h1 align="center">
 <img src="https://media4.giphy.com/media/KczBU4M2IEdClprXaq/giphy.gif" alt="gif com um homem vestido de EPI dizendo para você pegar uma cadeira e ficar confortável">
+</h1>
 
 ### Pré-requisitos
 
@@ -31,3 +33,5 @@ $ npm run dev
 
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
+
+<img src="https://img.shields.io/github/license/robertacintra/academia_angularnodejs">
