@@ -1,4 +1,4 @@
-<img src="./repo-readme/banner.gif" alt="banner de boas vindas ao meu repositório">
+<img src="./repo/banner.gif" alt="banner de boas vindas ao meu repositório">
 
 <h4 align="center"> 
 	🚧  Em construção...  🚧
