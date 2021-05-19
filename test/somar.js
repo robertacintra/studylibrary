@@ -1,0 +1,1 @@
+module.exports = (...numeros) => numeros.reduce((total, elem) => total += elem)
