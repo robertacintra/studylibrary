@@ -1,0 +1,27 @@
+<p [ngStyle]="{color: contador <= 3 ? 'red' : 'green'}">Contagem: {{ contador }}</p>
+<p *ngIf="contador > 5; else menor">O contador passou de 5!</p>
+
+<h2 [ngClass]="{subtitle: contador > 7}" *ngIf="contador > 4">
+    O contador é maior que 7
+</h2>
+
+<ng-template #menor>
+    <p>O contador é menor que 5</p>
+</ng-template>
+
+<ul [ngSwitch]="contador">
+    <li *ngSwitchCase="3">É ígual a 3</li>
+    <li *ngSwitchCase="5">É igual a 5</li>
+    <li *ngSwitchCase="8">É igual a 8</li>
+    <li *ngSwitchDefault>Eu sou o default :]</li>
+</ul>
+
+<input type="text" placeholder="Digite algo" [(ngModel)]="text">
+<p>O texto é {{ text }}</p>
+
+<button (click)="incrementa()" class="btn btn-success">Incrementa</button>
+<button (click)="decrementa()" class="btn btn-success">Decrementa</button>
+
+<ol>
+    <li *ngFOr="let pessoa of pessoas">A pessoa se chama {{ pessoa.nome }} {{ pessoa.sobrenome }} e trabalha como {{ pessoa.cargo }}</li>
+</ol>

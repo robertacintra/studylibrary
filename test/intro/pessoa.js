@@ -7,6 +7,10 @@ class Pessoa {
     toString() {
         return `${this.nome} ${this.idade}`
     }
+    
+    comprarCarro() {
+        throw new Error('Programador não')
+    }
 }
 
 module.exports = Pessoa

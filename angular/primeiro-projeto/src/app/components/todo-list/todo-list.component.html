@@ -1,0 +1,17 @@
+<div class="row d-flex align-item-center justify-content-center mt-5">
+    <div class="col-4">
+        <div class="card">
+        <div class="card-header text-center">
+            Lista de Tarefas
+        </div>
+        <div class="card-body d-flex align-items-center justify-content-center">
+            <input type="text" name="todo-text" id="todo-text" [(ngModel)]="text" (keyup.enter)="addTodo(text)">
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" *ngFor="let todo of todos">
+            <app-todo-item [todo]="todo" (remove)="removeTodo($event)" (sendTodoDone)="markAsDone(todo)"></app-todo-item>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
