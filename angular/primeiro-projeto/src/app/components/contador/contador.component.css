@@ -2,3 +2,7 @@
     color: blue;
     font-weight: bold;
 }
+
+.container {
+    padding: 0 400px;
+}

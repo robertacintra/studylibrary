@@ -1,5 +1,7 @@
-<p>
+<div class="d-flex justify-content-between">
     <span [ngClass]="{textdone: todo.done }">{{ todo.id }} - {{ todo.text }}</span>
-    <button class="btn btn-success btn-sm m-2" (click)="markAsDone()">&#10003;</button>
-    <button class="btn btn-danger btn-sm" (click)="removeTodo()">Remover</button>
-</p>
+    <div>
+        <button class="btn btn-success btn-sm m-2" (click)="markAsDone()">&#10003;</button>
+        <button class="btn btn-danger btn-sm" (click)="removeTodo()">Remover</button>
+    </div>
+</div>
