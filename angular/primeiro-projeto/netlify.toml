@@ -1,6 +1,6 @@
 [build]
   publish = "dist/primeiro-projeto"
- command = "ng build --prod"
+ command = "npm run-script build"
 [[redirects]]
  from="/*"
   to="/index.html"
