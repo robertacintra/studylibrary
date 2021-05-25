@@ -1,4 +1,4 @@
-<div class="d-flex flex-column container">
+<div class="d-flex flex-column col-md-8 col-12">
     <div class="mt-4">
         <p [ngStyle]="{color: contador <= 3 ? 'red' : 'green'}">Contagem: {{ contador }}</p>
         <p *ngIf="contador > 5; else menor">O contador passou de 5!</p>
@@ -31,7 +31,10 @@
             <button (click)="decrementa()" class="btn btn-danger m-1">Decrementa</button>
         </div>
     </div>
-    <ol>
-        <li *ngFOr="let pessoa of pessoas">A pessoa se chama {{ pessoa.nome }} {{ pessoa.sobrenome }} e trabalha como {{ pessoa.cargo }}</li>
-    </ol>
+
+    <div class="mt-5">
+        <ol>
+            <li *ngFor="let pessoa of pessoas">A pessoa se chama {{ pessoa.nome }} {{ pessoa.sobrenome }} e trabalha como {{ pessoa.cargo }}</li>
+        </ol>
+    </div>
 </div>

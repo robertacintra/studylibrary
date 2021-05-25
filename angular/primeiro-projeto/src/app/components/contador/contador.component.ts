@@ -11,24 +11,24 @@ export class ContadorComponent implements OnInit {
 
   pessoas = [
     {
-      nome: "Ivonaldo",
-      sobrenome: "Soares",
-      cargo: "Instrutor"
+      nome: "Ingrid",
+      sobrenome: "Melo",
+      cargo: "Programadora fullstack"
     },
     {
-      nome: "Andre",
-      sobrenome: "Patricio",
-      cargo: "Instrutor"
+      nome: "Roberta",
+      sobrenome: "Cintra",
+      cargo: "Dev front-end"
     },
     {
-      nome: "Ana",
-      sobrenome: "Maria",
-      cargo: "Apresentadora"
+      nome: "Serena",
+      sobrenome: "BM",
+      cargo: "Cachorra"
     },
     {
-      nome: "Silvio",
-      sobrenome: "Santos",
-      cargo: "Empreendedor"
+      nome: "Gato",
+      sobrenome: "Gato",
+      cargo: "Gato"
     },
   ]
 
