@@ -6,7 +6,8 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 @Component({
   selector: 'app-view',
   templateUrl: './view.component.html',
-  styleUrls: ['./view.component.css'],
+  styleUrls:
+  ['../../app.component.css']
 })
 export class ViewComponent implements OnInit {
   subscriptions: Subscription[] = [];
@@ -27,7 +28,6 @@ export class ViewComponent implements OnInit {
         this.pokemon = this.pokemonService.pokemons.find(
           (poke) => poke.name === params.name
         );
-        debugger;
         if (this.pokemon) {
           this.getEvolution();
           return;
