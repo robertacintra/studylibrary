@@ -10,16 +10,17 @@ import { Observable } from 'rxjs';
 export class PokemonService {
   url = environment.apiUrl + 'pokemon/';
   _pokemons: any[] = [];
-  _next = '';
+  _next: string  = '';
+
 
   constructor(private http:HttpClient) { }
 
   get pokemons(): any[] {
-    return this._pokemons
+    return this._pokemons;
   }
 
   get next(): string {
-    return this._next
+    return this._next;
   }
 
   set next(next: string) {
@@ -29,6 +30,7 @@ export class PokemonService {
   getType(pokemon: any): string {
     return pokemon && pokemon.types.length > 0 ? pokemon.types[0].type.name : '';
   }
+
 
   getPokemons(): Observable<any[]> {
     return this.http.get<any[]>(this.url);
@@ -40,11 +42,11 @@ export class PokemonService {
   }
 
   getNext(): Observable<any[]> {
-    const url = this.next === '' ? `${this.url}?limit=100` : this.next;
+    const url = this.next === '' ? `${this.url}?limit=50` : this.next;
     return this.http.get<any[]>(url);
   }
 
-  getEvolution(id: number): Observable<any[]> {
+  getEvolution(id: any): Observable<any[]> {
     const url = `${environment.apiUrl}evolution-chain/${id}`;
     return this.http.get<any[]>(url);
   }
